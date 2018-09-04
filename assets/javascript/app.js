@@ -47,13 +47,6 @@ $(document).ready(function () {
             for (var i = 0; i < length; i++) {
                 $("#results").append("<img src=" + data.data[i].images.fixed_height.url + ">");
             };
-
-            // $("#results").append("<img src=" + data.data[0].images.fixed_height.url + ">");
-            // $("#results").append("<img src=" + data.data[1].images.fixed_height.url + ">");
-            // $("#results").append("<img src=" + data.data[2].images.fixed_height.url + ">");
-            // $("#results").append("<img src=" + data.data[3].images.fixed_height.url + ">");
-            // $("#results").append("<img src=" + data.data[4].images.fixed_height.url + ">");
-
         });
     };
 
