@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    //An array of buttons that retrive data from the API
-    //There is a div for showing the results and each new button is pressed it would empyt it.
-    //There should be a hover feature for the gifs
     //The gifs also have a rating that is gotten from the API
     //Every time I enter a new string it would add a button
     //The new string will be called from the API
@@ -39,18 +36,39 @@ $(document).ready(function () {
 
         var gif = $(this).attr("data-name");
 
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=J0srxNqSiBFUtKrwLvz5ATmCprU2OOsr&limit=25");
+        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=J0srxNqSiBFUtKrwLvz5ATmCprU2OOsr&limit=10");
         xhr.done(function (data) {
 
             console.log("success got data", data);
             var length = data.data.length;
             for (var i = 0; i < length; i++) {
-                $("#results").append("<img src=" + data.data[i].images.fixed_height.url + ">");
+                //Add a value attribute equal to [i] that varifies the number of the made gif or "data-" attr 
+                $("#results").append("<div id='ratingDiv'> Rating: " + data.data[i].rating + "<br><img class='clickGIF' src=" + data.data[i].images.fixed_height_still.url + " data-status = 'still' data-num=" + [i] + "></div>");
             };
+
+            $(".clickGIF").on("click",function(){
+                console.log("yes!");
+                var src = $(this).attr("src");
+                console.log(src);
+                var newStat = $(this).attr("data-status");
+                console.log(newStat);
+                var i = $(this).attr("data-num");
+                console.log(i);
+
+                if (newStat === 'still') {
+                    src = $(this).attr("src", data.data[i].images.fixed_height.url);
+                    newStat = $(this).attr("data-status","gif")
+                }
+                else {
+                    src = $(this).attr("src", data.data[i].images.fixed_height_still.url);
+                    newStat = $(this).attr("data-status","still");
+                }
+            })
         });
     };
-
+    
     $(document).on("click", ".gif", displayGIFs);
 
+//Create a document on click that only works with a class and varifies it with the number value.
 
 });
