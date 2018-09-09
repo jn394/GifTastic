@@ -10,19 +10,59 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js" defer></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+    <title>Welcome To The 80's</title>
 </head>
 
-<body>
+<body class="mybody">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-0 mt-3">
+                <div class="jumbotron jumbotron-fluid mt-3 rounded">
+                    <div class="container">
+                        <h1 class="display-3 d-flex justify-content-center">Everything 80's</h1>
+                        <p class="lead d-flex justify-content-center">Take a trip down memory lane to the 80's, in GIF form!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div id="buttons"></div>
-    <form id="gif-form">
-        <label for="gif-input">Search for a gif</label>
-        <input type="text" id="gif-input"><br>
-        <input id="add-gif" type="submit" value="Gif Search">
-    </form>
-    <div id="results"></div>
-
+        <div class="row">
+            <div class="col-md-12">
+                <div id="buttons" class="ml-3"></div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form id="gif-form" class="p-3 mt-3">
+                    <label id="gif-search" for="gif-input" class="mr-2">Search for a gif</label>
+                    <input type="text" id="gif-input">
+                    <input id="add-gif" class="btn btn-outline-warning ml-3" type="submit" value="Gif Search">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="form-group p-3 mt-3">
+                    <label class="numLabel" for="exampleFormControlSelect1">Number of Gifs</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option data-num=1 0>10</option>
+                        <option data-num=2 0>20</option>
+                        <option data-num=3 0>30</option>
+                        <option data-num=4 0>40</option>
+                        <option data-num=5 0>50</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="results-10"></div>
+            <div id="results-20"></div>
+            <div id="results-30"></div>
+            <div id="results-40"></div>
+            <div id="results-50"></div>
+        </div>
+    </div>
 </body>
 
 </html>

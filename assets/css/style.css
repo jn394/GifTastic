@@ -1,4 +1,96 @@
-#ratingDiv {
+body {
+    background-image: url("https://natewren.com/themes/wallpaper2/radpackfree/radpack_15.jpg");
+    font-family: 'Baloo Da', cursive;
+    background-repeat:  repeat;
+background-size: 100%;
+}
+
+.jumbotron {
+    background-color: orange;
+    box-shadow: 10px 10px 5px rgb(131, 25, 78);
+}
+
+.display-3 {
+    background: -webkit-linear-gradient(hotpink, rgb(90, 17, 54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lead {
+    background: -webkit-linear-gradient(hotpink, rgb(90, 17, 54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    margin: 10px;
+}
+
+.btn-outline-warning:hover {
+color: rgb(131, 25, 78);
+}
+
+#gif-form {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#gif-search {
+    background: -webkit-linear-gradient(hotpink, rgb(90, 17, 54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    background-color: orange;
+    border-radius: 10px;
+    height: 55px;
+    width: 250px;   
+}
+
+.numLabel{
+    background: -webkit-linear-gradient(hotpink, rgb(90, 17, 54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control {
+    position: relative;
+    left: 130px;
+    top: -40px;
+    width: 90px;
+}
+
+#add-gif {
+    color:  rgb(90, 17, 54);
+    border-color:  rgb(158, 44, 101);
+    background-color: rgb(216, 60, 138);
+}
+#add-gif:hover {
+    background-color: hotpink;
+}
+
+#gifDiv {
     display: inline-block;
     margin: 15px;
 }
+
+#gifDiv {
+    background-color: orange;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(90, 17, 54);
+    padding: 0px 3px 3px 3px;
+    border-radius: 10px;
+}
+
+#gifDiv:hover{
+    transition: .5s ease;
+    background-color: rgb(194, 31, 112);
+    box-shadow: 10px 10px 5px orange;
+    color: orange;
+}
+
+img {
+    border-radius: 10px;
+}
+
