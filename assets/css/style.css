@@ -2,7 +2,7 @@ body {
     background-image: url("https://natewren.com/themes/wallpaper2/radpackfree/radpack_15.jpg");
     font-family: 'Baloo Da', cursive;
     background-repeat:  repeat;
-background-size: 100%;
+    background-size: 100%;
 }
 
 .jumbotron {
@@ -94,3 +94,27 @@ img {
     border-radius: 10px;
 }
 
+
+@media screen and (max-width: 980px) {
+    body{
+        background-image: url("http://dualmonitorswallpaper.com/wp-content/uploads/2018/03/3840x1080-80s-neon-wallpaper-7.jpg");
+        background-repeat: repeat;
+        background-size: 980px 3000px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url("https://i.pinimg.com/originals/23/9e/64/239e64f0d903b8ed6639839e864de7dd.jpg");
+        background-repeat: repeat;
+        background-size: 768px 3000px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body{
+        background-image: url("https://natewren.com/themes/wallpaper2/radpack/radpack_6b.jpg");
+        background-repeat: repeat;
+        background-size: 640px 3000px;
+    }
+}
