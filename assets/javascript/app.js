@@ -30,7 +30,7 @@ $(document).ready(function () {
         $("#gif-input").val("");
     });
 
-    //Default at 10
+    //Default at 10 gifs
     $("#results-10").show();
     $("#results-20").hide();
     $("#results-30").hide();
@@ -97,7 +97,8 @@ $(document).ready(function () {
         });
     };
 
-    function showthings(){
+    //Function to show and hide the different number of gifs
+    function numGIFS(){
         $(this).on("click", function () {
             if ($(".form-control").val() === "10") {
                 $("#results-10").show();
@@ -139,7 +140,7 @@ $(document).ready(function () {
 
     //When a gif is clicked it will display the gif in the html
     $(document).on("click", ".gif", displayGIFs);
-    $(document).on("click", ".form-control", showthings);
+    $(document).on("click", ".form-control", numGIFS);
 
     //Create a document on click that only works with a class and varifies it with the number value.
     $(".form-control").on("click", function () {
@@ -149,4 +150,4 @@ $(document).ready(function () {
 
 });
 
-//should trigger when the numbers are selected
+
